@@ -1,6 +1,7 @@
-const canvas = document.getElementById("theCanvas");
+var canvas = document.getElementById("theCanvas");
 const ctx = canvas.getContext('2d');
 var img = document.getElementById('cards');
+
 
 const Cards = {
     pic: img,
@@ -19,5 +20,6 @@ function insertCards() {
         Cards.h);
 };
 
-insertCards();
 
+
+insertCards();
