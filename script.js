@@ -11,6 +11,7 @@ const Cards = {
     h: 300
 };
 
+
 function insertCards() {
     ctx.drawImage(
         Cards.pic, 
@@ -20,6 +21,6 @@ function insertCards() {
         Cards.h);
 };
 
-
+addEventListener.Cards.onClick
 
 insertCards();
