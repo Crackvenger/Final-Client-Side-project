@@ -21,6 +21,6 @@ function insertCards() {
         Cards.h);
 };
 
-addEventListener.Cards.onClick
+addEventListener.img.onClick
 
 insertCards();
