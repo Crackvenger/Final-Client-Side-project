@@ -1,18 +1,21 @@
 var canvas = document.getElementById("theCanvas");
 const ctx = canvas.getContext('2d');
-var img = document.getElementById('cards');
+var image = document.getElementById('cards');
 
 
 const Cards = {
-    pic: img,
+    pic: image,
     x: 100,
     y: 600,
     w: 720,
     h: 300
 };
 
+dist()
+
 
 function insertCards() {
+   
     ctx.drawImage(
         Cards.pic, 
         Cards.x, 
@@ -21,6 +24,19 @@ function insertCards() {
         Cards.h);
 };
 
-addEventListener.img.onClick
-
 insertCards();
+
+function moveCards(){
+    Cards.y = 100;
+};
+
+function update() {
+     moveCards();
+
+     insertCards();
+
+     console.log("Is this shit even working?");
+};
+
+
+image.onmouseclick() = update;
