@@ -3,13 +3,18 @@ const ctx = canvas.getContext('2d');
 var image = document.getElementById('cards');
 
 
-const Cards = {
-    pic: image,
-    x: 100,
-    y: 650,
-    width: 720,
-    height: 250
+function cards(image, x, y, width, height) {
+    this.pic= image;
+    this.x= 100;
+    this.y= 450;
+    this.width= 720;
+    this.height= 200;
 };
+
+x: 100;
+y: 450;
+width: 720;
+height: 200;
 
 
 function insertCards() {

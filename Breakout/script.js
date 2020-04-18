@@ -3,6 +3,9 @@ const closeBtn = document.getElementById('close-btn');
 const rules = document.getElementById('rules');
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+const color = ["red", "blue", "yellow", "green"];
+var brickColor = color[Math.floor(Math.random() * color.length)];
+console.log(brickColor);
 //const RAPIDAPI_API_URL = 'https://arjunkomath-jaas-json-as-a-service-v1.p.rapidapi.com/';
 
 /*const RAPIDAPI_REQUEST_HEADERS = {
@@ -81,7 +84,7 @@ for (let i = 0; i < brickRowCount; i++) {
 function drawBall() {
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
-  ctx.fillStyle = '#FFA07A';
+  ctx.fillStyle = 'red';
   ctx.fill();
   ctx.closePath();
 }
@@ -107,7 +110,7 @@ function drawBricks() {
     column.forEach(brick => {
       ctx.beginPath();
       ctx.rect(brick.x, brick.y, brick.w, brick.h);
-      ctx.fillStyle = brick.visible ? '#FFA07A' : 'transparent';
+      ctx.fillStyle = brick.visible ? brickColor : 'transparent';
       ctx.fill();
       ctx.closePath();
     });

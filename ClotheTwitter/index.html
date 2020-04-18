@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>TweetShirt</title>
+</head>
+<body>
+    <h1>GetAshirt</h1>
+    <div class="container">
+
+    <canvas height="200" id="tshirtCanvas"></canvas>
+
+</div>
+    <form class="center">
+        <p>
+        <label for="backgroundColor">Select background color:</label>
+        <select id="backgroundColor">
+        <option value="white" selected="selected">White</option>
+        <option value="black">Black</option>
+        <option value="indigo">Indigo</option>
+        <option value="red">Red</option>
+        </select>
+        </p>
+        <p>
+        <label for="shape">Circles or squares?</label>
+        <select id="shape">
+        <option value="none" selected="selected">Neither</option>
+        <option value="circles">Circles</option>
+        <option value="squares">Squares</option>
+        </select>
+        </p>
+        <p>
+        <label for="foregroundColor">Select text color:</label>
+        <select id="foregroundColor">
+        <option value="black" selected="selected">Black</option>
+        <option value="white">White</option>
+        <option value="indigo">Indigo</option>
+        <option value="red">Red</option>
+        </select>
+        </p>
+        <p>
+        <label for="tweets">Pick a tweet:</label>
+        <select id="tweets">
+        </select>
+        </p>
+        <p>
+        <input type="button" id="previewButton" value="Preview">
+        </p>
+        </form>
+        <div id="results"></div>
+</body>
+</html>
+
