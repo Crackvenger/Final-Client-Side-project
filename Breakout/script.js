@@ -3,33 +3,6 @@ const closeBtn = document.getElementById('close-btn');
 const rules = document.getElementById('rules');
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-//const RAPIDAPI_API_URL = 'https://arjunkomath-jaas-json-as-a-service-v1.p.rapidapi.com/';
-
-/*const RAPIDAPI_REQUEST_HEADERS = {
-  'X-RapidAPI-Host': 'arjunkomath-jaas-json-as-a-service-v1.p.rapidapi.com'
-  , 'X-RapidAPI-Key': '7xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-  , 'Content-Type': 'application/json'
-};
-
-const student = {
-  name: 'John'
-  , surname: 'Doe'
-  , age: 18
-};
-
-// Making a POST request using an axios instance from a connected library
-axios.post(RAPIDAPI_API_URL, student, { headers: RAPIDAPI_REQUEST_HEADERS })
-  // Handle a successful response from the server
-  .then(response => {
-          // Getting a data object from response that contains the necessary data from the server
-          const data = response.data;
-          console.log('data', data);
-          // Save the unique id that the server gives to our object
-      //    STUDENT_ID = data._id;
-  })
-  // Catch and print errors if any
-  .catch(error => console.error('On create student error', error));
-*/
 
 let score = 0;
 
@@ -265,34 +238,6 @@ function showSrc() { //alert("this is detail");
 function hds() { //alert("hdi"); 
   document.getElementById("srcbox").style.display = "none";  
   document.getElementById("srckey").innerHTML = ""; 
-}
-
-function skey(e) { //alert("skey");
-  if (e.keyCode == 13) {
-    var s = document.getElementById("srckey").value;
-    var cv = document.getElementById("c1");
-    var ctx = cv.getContext("2d"); 
-    var r = Math.floor(Math.random() * 3);
-    if (r == 0) {
-      ctx.font = "70px Arial"; 
-      ctx.fillStyle = "rgba(255,0,0,0.4)";    
-      ctx.fillText("(1) "+s, 10, 150); 
-			ac(0,"1>"+s);
-    }
-    if (r == 1) {
-      ctx.font = "100px Calibri"; 
-      ctx.fillStyle = "rgba(0,255,0,0.4)";    
-      ctx.fillText("(1) "+s, 310, 350);
-			ac(1,"1>"+s);
-    }
-    if (r == 2) {
-      ctx.font = "50px Serif"; 
-      ctx.fillStyle = "rgba(0,0,255,0.4)";    
-      ctx.fillText("(1) "+s, 110, 450);
-			ac(2,"1>"+s);
-    }
-    document.getElementById("srckey").value="";
-  }
 }
 
 function clrc() {
