@@ -10,15 +10,14 @@
 <body>
     <h1>GetAshirt</h1>
     <div class="container">
+        <canvas width="500" height="300" id="tshirtCanvas"></canvas>
+    </div>
 
-    <canvas height="200" id="tshirtCanvas"></canvas>
-
-</div>
     <form class="center">
         <p>
         <label for="backgroundColor">Select background color:</label>
         <select id="backgroundColor">
-        <option value="white" selected="selected">White</option>
+        <option value="#252326" selected="selected">White</option>
         <option value="black">Black</option>
         <option value="indigo">Indigo</option>
         <option value="red">Red</option>
@@ -35,22 +34,21 @@
         <p>
         <label for="foregroundColor">Select text color:</label>
         <select id="foregroundColor">
-        <option value="black" selected="selected">Black</option>
+        <option value="#252326" selected="selected">Black</option>
         <option value="white">White</option>
-        <option value="indigo">Indigo</option>
-        <option value="red">Red</option>
+        <option value="#3794bf">Indigo</option>
+        <option value="#4e235c">purple...maybe</option>
         </select>
         </p>
         <p>
-        <label for="tweets">Pick a tweet:</label>
-        <select id="tweets">
+        <label for="text">Pick a city</label>
+        <select id="text">
         </select>
         </p>
         <p>
         <input type="button" id="previewButton" value="Preview">
         </p>
         </form>
-        <div id="results"></div>
-</body>
+ </body>
 </html>
 

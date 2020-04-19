@@ -1,6 +1,6 @@
 window.onload = function () {
-    var url = "http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}&pretty=true";
-    var request = new this.XMLHttpRequest
+    var url = "http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}&tel={phone|format}&address={streetAddress}&city={city}&state={usState|abbr}&zip={zip}&pretty=true";
+    var request = new this.XMLHttpRequest();
     request.open("GET", url);
     request.onload = function() {
     if (request.status == 200) {
@@ -18,5 +18,6 @@ window.onload = function () {
         nDiv.setAttribute("class", "nameItem");
         nDiv.innerHTML = "Hello my name is " + names.fname + " " + names.lname;
         result.appendChild(nDiv);
+        
     }
     }
