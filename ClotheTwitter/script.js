@@ -91,7 +91,7 @@ function drawText(canvas,context) {
     context.fillText("I went to", 40, 50);
 
     selectObj = document.getElementById("text");
-    index = selectObj.selectedIndex;
+    var index = selectObj.selectedIndex;
     var text = selectObj[index].value;
     context.font = "italic 2em serif";
     context.fillText(text, 80, 100);
